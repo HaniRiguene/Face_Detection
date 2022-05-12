@@ -17,7 +17,7 @@ if __name__ == "__main__":
    root.minsize(1350,720)
    root.configure(bg="#382273")
    root.attributes('-fullscreen', True)
-   root.title("CFIS- Criminal Face Identification System")
+   root.title("Face Identification System")
    
 image=Image.open("images.jpg")
 # f = mp3play.load('Sound.mp3');
@@ -33,7 +33,7 @@ label_1.place(x=30,y=60)
 label_177 = Label(root, text="Double click on record to see details",bg='#382273',fg='white',width=50,font=("bold", 15))
 label_177.place(x=700,y=48)
 
-label_0 = Label(root, text="Criminal Face Identification System",width=87,font=("bold", 20),anchor=CENTER,bg="grey",fg="white")
+label_0 = Label(root, text="Face Identification System",width=87,font=("bold", 20),anchor=CENTER,bg="grey",fg="white")
 label_0.place(x=0,y=0)
 
 '''
@@ -56,7 +56,7 @@ def View():
 
 #################################################################3##
 def viewdetail(a):
-   conn = sqlite3.connect("criminal.db")
+   conn = sqlite3.connect("Humans.db")
    cur = conn.cursor()
    cur.execute("SELECT * FROM people where Id="+str(a))
    rows = cur.fetchall()
