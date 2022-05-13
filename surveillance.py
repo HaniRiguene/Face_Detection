@@ -68,10 +68,6 @@ class App:
 
         self.tree.heading("#2", text="NAME")
         self.tree.column("#2", minwidth=0, width=70, stretch=NO)
-
-		# self.tree.heading("#3", text="CRIME")
-		# self.tree.column("#3", minwidth=0, width=120, stretch=NO)
-
         self.tree.heading("#4", text="Nationality")
         self.tree.column("#4", minwidth=0, width=110, stretch=NO)
 
@@ -143,14 +139,6 @@ class App:
         label_nat = Label(self.window, text="Nationality", bg="#382273", fg='yellow', width=20, font=("bold", 12))
         label_nat.place(x=930, y=610)
 
-		# label_bloodgroup = Label(self.window, text="BloodGroup",bg="#382273",fg='yellow',width=20,font=("bold", 12))
-		# label_bloodgroup.place(x=930,y=550)
-
-		# label_body = Label(self.window, text="BodyMark",bg="#382273",fg='yellow',width=20,font=("bold", 12))
-		# label_body.place(x=930,y=580)
-
-		# label_crime = Label(self.window, text="Crime",bg="#382273",width=20,font=("bold"12),fg="yellow")
-		# label_crime.place(x=930,y=610)
 
         x = 'user.' + str(a) + ".png"
         image = Image.open('images/' + x)
