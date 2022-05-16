@@ -7,7 +7,7 @@ from tkinter import filedialog
 import tkinter.messagebox as tmsg
 import cv2
 from subprocess import call
-
+import socket 
 
 def callTrainer():
     call(["python", "trainer.py"])
